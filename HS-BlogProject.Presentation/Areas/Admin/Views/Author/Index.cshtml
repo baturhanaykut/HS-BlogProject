@@ -1,0 +1,41 @@
+﻿@model List<AuthorVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+@foreach (var author in Model)
+{
+
+    <div class="col-md-4">
+
+        <div class="card card-widget widget-user">
+
+            <div class="widget-user-header bg-info">
+                <h3 class="widget-user-username">@author.FirstName @author.LastName</h3>
+            </div>
+            <div class="widget-user-image">
+                <img class="img-circle elevation-2" src="@author.ImagePath" alt="User Avatar">
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6 border-right">
+                        <div class="description-block">
+                            <h5 class="description-header">10</h5>
+                            <span class="description-text">POST</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 border-right">
+                        <div class="description-block">
+                            <h5 class="description-header">13,000</h5>
+                            <span class="description-text">Like</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

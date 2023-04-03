@@ -1,0 +1,58 @@
+﻿@model List<GenreVM>
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+
+<div class="col-md-12">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">List of Genre</h3>
+        </div>
+        <div class="card-body">
+            <table id="genreTable" class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Genre" asp-action="Update" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Update</a>
+                                <a asp-area="Admin" asp-controller="Genre" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                           
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <a asp-action="Create" class="btn btn-block btn-dark">Create Genre</a>  
+        </div>
+    </div>
+</div>
+
+@section Css{
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+}
+
+
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        let table = new DataTable('#genreTable');
+    </script>
+}
+
