@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HS-BlogProject.Insfrastruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HS-BlogProject.Application", "HS-BlogProject.Application\HS-BlogProject.Application.csproj", "{088B5B04-0F2A-49E7-8961-F6B90D633DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS-BlogProject.Presentation", "HS-BlogProject.Presentation\HS-BlogProject.Presentation.csproj", "{2B000B9D-6835-44A4-8BBA-23F5456CBC47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HS-BlogProject.Presentation", "HS-BlogProject.Presentation\HS-BlogProject.Presentation.csproj", "{2B000B9D-6835-44A4-8BBA-23F5456CBC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS-BlogProject.WebAPI", "HS-BlogProject.API\HS-BlogProject.WebAPI.csproj", "{AD212275-0E3D-43BE-BFAD-B8B5A2B9184B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2B000B9D-6835-44A4-8BBA-23F5456CBC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B000B9D-6835-44A4-8BBA-23F5456CBC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B000B9D-6835-44A4-8BBA-23F5456CBC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD212275-0E3D-43BE-BFAD-B8B5A2B9184B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD212275-0E3D-43BE-BFAD-B8B5A2B9184B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD212275-0E3D-43BE-BFAD-B8B5A2B9184B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD212275-0E3D-43BE-BFAD-B8B5A2B9184B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

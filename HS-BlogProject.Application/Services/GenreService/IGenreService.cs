@@ -21,7 +21,7 @@ namespace HS_BlogProject.Application.Services.GenreService
         //Id ile genre getir
         Task<UpdateGenreDTO> GetById(int id);
 
-        Task<List<GenreVM>> GetGenre();
+        Task<List<GenreVM>> GetGenres();
      
 
 

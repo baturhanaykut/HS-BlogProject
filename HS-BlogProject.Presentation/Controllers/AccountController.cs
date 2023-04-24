@@ -44,7 +44,7 @@ namespace HS_BlogProject.Presentation.Controllers
                 foreach (var item in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, item.Description); // Kayıt için bir model gönderdiğimiz hatalar var ise göstermek için kullanırız. 
-                    TempData["Error"] = "Something wnet wron";
+                    TempData["Error"] = "Something went wrong";
                 }
 
             }

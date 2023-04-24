@@ -23,8 +23,6 @@ namespace HS_BlogProject.Presentation.Controllers
             // model postları iletecek View'a
 
             List<PostVM> posts = await _postService.GetPosts();
-           
-
             return View(posts);
         }
     }

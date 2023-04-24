@@ -50,7 +50,7 @@ namespace HS_BlogProject.Application.Services.GenreService
             return model;
         }
 
-        public async Task<List<GenreVM>> GetGenre()
+        public async Task<List<GenreVM>> GetGenres()
         {
             var genre = await _genreRepository.GetFilteredList(
                 select: x => new GenreVM()
